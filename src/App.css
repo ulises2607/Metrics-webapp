@@ -1,0 +1,10 @@
+body {
+    background-color: gray;
+}
+
+.App {
+    width: 400px;
+    height: 700px;
+    margin: 5rem;
+    background-color: aliceblue;
+}

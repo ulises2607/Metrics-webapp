@@ -1,0 +1,12 @@
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.item {
+    border: 1px solid #ccc;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
