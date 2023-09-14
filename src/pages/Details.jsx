@@ -18,7 +18,11 @@ const Details = () => {
           if (countryData.nombre === country) {
             return countryData.provinces.map(province => (
               <li key={province.nombre}>
-                <DetailsCard name={province.nombre} imp_city={province.important_city} />
+                <DetailsCard name={province.nombre} 
+                imp_city={province.important_city}
+                show = {province.show} 
+                details={province.details}
+                />
               </li>
             ));
           }
