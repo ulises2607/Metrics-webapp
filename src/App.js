@@ -1,6 +1,6 @@
 import './App.css';
-import Details from './Components/Details';
-import Home from './Components/Home';
+import Details from './pages/Details';
+import Home from './pages/Home';
 import NavBar from './Components/NavBar';
 import { Route, Routes } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/details" element={<Details />} />
+        <Route path="/details/:country" element={<Details />} />
       </Routes>
     </div>
   );
