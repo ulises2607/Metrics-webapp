@@ -47,6 +47,7 @@ DetailsCard.propTypes = {
   name: PropTypes.string.isRequired,
   impCity: PropTypes.string.isRequired,
   show: PropTypes.bool.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
   detail: PropTypes.object,
 };
 
