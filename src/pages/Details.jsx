@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import DetailsCard from '../Components/DetailsCard';
 import Header from '../Components/Header';
-import Search from '../Components/Search'; 
+import Search from '../Components/Search';
 
 const Details = () => {
   const { country } = useParams();
@@ -26,9 +26,8 @@ const Details = () => {
         {cities.map((countryData) => {
           if (countryData.nombre === country) {
             return countryData.provinces
-              .filter((province) =>
-                province.nombre.toLowerCase().includes(searchTerm.toLowerCase())
-              )
+              .filter((province) => province.nombre
+                .toLowerCase().includes(searchTerm.toLowerCase()))
               .map((province) => (
                 <li key={province.nombre}>
                   <DetailsCard

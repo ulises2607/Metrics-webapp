@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const Search = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -6,7 +7,7 @@ const Search = ({ onSearch }) => {
   const handleSearch = (e) => {
     const term = e.target.value;
     setSearchTerm(term);
-    onSearch(term); 
+    onSearch(term);
   };
 
   return (
@@ -19,6 +20,10 @@ const Search = ({ onSearch }) => {
       />
     </div>
   );
+};
+
+Search.propTypes = {
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default Search;
