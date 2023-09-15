@@ -1,9 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Header = () => (
+const Header = ({ title }) => (
   <div>
-    <h1>America</h1>
+    <h1>{title}</h1>
   </div>
 );
+
+Header.propTypes = {
+  title: PropTypes.string,
+};
+
+Header.defaultProps = {
+  title: 'South america',
+};
 
 export default Header;
