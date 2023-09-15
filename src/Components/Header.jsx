@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Header = () => (
+const Header = ({title='South america'}) => (
   <div>
-    <h1>America</h1>
+    <h1>{title}</h1>
   </div>
 );
 
