@@ -10,6 +10,7 @@ const Details = () => {
 
   const cities = useSelector(state => state.details.cities);
 
+  console.log("App iniciada");
   return (
     <div className='details-container'>
       <h2>{country}</h2>
@@ -21,7 +22,7 @@ const Details = () => {
                 <DetailsCard name={province.nombre} 
                 imp_city={province.important_city}
                 show = {province.show} 
-                details={province.details}
+                detail={province.detail}
                 />
               </li>
             ));

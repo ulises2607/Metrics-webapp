@@ -6,7 +6,7 @@ const API_KEY = '3e341f1094147b1dd3b25d397b2c892e';
 
 const initialState = {
     cities: ejemplo,
-    details:[]
+    updatedDetails: [],
 };
 
 const getData = async (longitude, latitude) => {
@@ -27,7 +27,7 @@ export const fetchDetail = createAsyncThunk('home/fetchHome', async ( city ) => 
         const { lat, lon } = dataLocation[0];
         const data = await getData(lon, lat);
         console.log(data, 'data del fetchDetail');
-        return data;
+        return {data, city};
     } catch (error) {
         console.log(error, 'error en el fetchDetail');
     }
@@ -40,7 +40,9 @@ const detailsSlice = createSlice({
     initialState,
     reducers: {
         showDetails: (state, action) => {
-            return {
+            console.log("Antes de actualizar el estado:", state);
+      
+            const updatedState = {
               ...state,
               cities: state.cities.map((country) => ({
                 ...country,
@@ -50,19 +52,30 @@ const detailsSlice = createSlice({
                 })),
               })),
             };
-          } 
+      
+            console.log("Después de actualizar el estado:", updatedState);
+            return updatedState;
         },
+    },
     extraReducers: {
         [fetchDetail.fulfilled]: (state, action) => {
-            console.log(action.payload, 'action.payload del fetch llamadi desde el handle');
-        //     return {
-        //         ...state,
-        //         cities: state.cities.map((country) => ({
-        //             ...country,
-        //             provinces: country.provinces.map((province) => ({
-            
-        // }
-    }
+            const { data, city } = action.payload;
+            console.log("Antes de actualizar el estado en fetchDetail.fulfilled:", state);
+      
+            const updatedState = {
+              ...state,
+              cities: state.cities.map((country) => ({
+                ...country,
+                provinces: country.provinces.map((province) => ({
+                  ...province,
+                  detail: province.important_city === city ? data : province.detail,
+                })),
+              })),
+            };
+      
+            console.log("Después de actualizar el estado en fetchDetail.fulfilled:", updatedState);
+            return updatedState;
+          },
 }})
 
 
