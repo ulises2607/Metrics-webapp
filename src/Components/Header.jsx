@@ -1,9 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../Assets/Styles/Header.css'
 
 const Header = ({ title }) => (
-  <div>
-    <h1>{title}</h1>
+
+
+  <div className='header-container'>
+    <div className="img-header-container">
+      <img src={require('../Assets/Images/pngegg.png')} alt='logo' className='logo-header' />
+    </div>
+    <div className="title-header-container">
+      <h1 className='title-header'>{title}</h1>
+    </div>
   </div>
 );
 
@@ -12,7 +20,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  title: 'South america',
+  title: 'South America air polution',
 };
 
 export default Header;

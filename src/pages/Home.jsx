@@ -11,6 +11,7 @@ const Home = () => {
       <div className="header-container">
         <Header />
       </div>
+      <div className="divider"></div>
       <div className="home-container">
         {home.map((item) => (
           <HomeCards key={item.nombre} item={item} />
