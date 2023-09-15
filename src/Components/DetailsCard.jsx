@@ -1,9 +1,58 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { fetchDetail, showDetails } from '../Redux/Details/detailsSlice';
 
-const DetailsCard = () => {
+const DetailsCard = ({
+  name, impCity, show, detail,
+}) => {
+  const dispatch = useDispatch();
+
+  const handleClick = async () => {
+    dispatch(showDetails(impCity));
+    dispatch(fetchDetail(impCity));
+  };
+
   return (
-    <div>DetailsCard</div>
-  )
-}
+    <div className="detailCard-container">
+      <div className="card-name">
+        <strong>{name}</strong>
+        <span>{impCity}</span>
+      </div>
+      <div className="button-container">
+        <button type="button" onClick={handleClick}>
+          {show ? 'Hide' : 'Show'}
+        </button>
+      </div>
+      {show && detail && (
+      <ul>
+        {Object.entries(detail).map(([key, value]) => (
+          <li key={key}>
+            <strong>
+              {key}
+              :
+            </strong>
+            {' '}
+            {value}
+          </li>
+        ))}
+      </ul>
+      )}
 
-export default DetailsCard
+    </div>
+  );
+};
+
+DetailsCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  impCity: PropTypes.string.isRequired,
+  show: PropTypes.bool.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  detail: PropTypes.object,
+};
+
+DetailsCard.defaultProps = {
+  detail: {},
+};
+
+export default DetailsCard;
