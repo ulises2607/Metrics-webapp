@@ -1,14 +1,14 @@
 .details-title {
-    color: #fce4ef;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: #df4783;
-    display: flex;
-    align-items: center;
-    padding-left: 0.5rem;
-    height: 2rem;
+  color: #fce4ef;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #df4783;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  height: 2rem;
 }
 
 .detail-container {
-    background-color: #ec4c8a;
+  background-color: #ec4c8a;
 }

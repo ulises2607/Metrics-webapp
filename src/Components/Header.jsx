@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../Assets/Styles/Header.css'
+import '../Assets/Styles/Header.css';
+import homeIcon from '../Assets/Images/pngegg.png';
 
 const Header = ({ title }) => (
 
-
-  <div className='header-container'>
+  <div className="header-container">
     <div className="img-header-container">
-      <img src={require('../Assets/Images/pngegg.png')} alt='logo' className='logo-header' />
+      <img src={homeIcon} alt="logo" className="logo-header" />
     </div>
     <div className="title-header-container">
-      <h1 className='title-header'>{title}</h1>
+      <h1 className="title-header">{title}</h1>
     </div>
   </div>
 );

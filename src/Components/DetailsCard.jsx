@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { fetchDetail, showDetails } from '../Redux/Details/detailsSlice';
-import '../Assets/Styles/DetailsCard.css'
+import '../Assets/Styles/DetailsCard.css';
+import upArrow from '../Assets/Images/up-arrow.png';
+import downArrow from '../Assets/Images/down-arrow.png';
 
 const DetailsCard = ({
   name, impCity, show, detail,
@@ -19,20 +21,20 @@ const DetailsCard = ({
       <div className="card-and-button">
         <div className="card-name">
           <strong>{name}</strong>
-          <span className='dc-imp-city'>{impCity}</span>
+          <span className="dc-imp-city">{impCity}</span>
         </div>
         <div className="button-container">
-          <button className='show-detail-btn' type="button" onClick={handleClick}>
-            {show ? <img src={require('../Assets/Images/up-arrow.png')} alt="minus" className='arrow-icon' /> :
-             <img src={require('../Assets/Images/down-arrow.png')} alt='logo' className='arrow-icon' />}
+          <button className="show-detail-btn" type="button" onClick={handleClick}>
+            {show ? <img src={upArrow} alt="minus" className="arrow-icon" />
+              : <img src={downArrow} alt="logo" className="arrow-icon" />}
           </button>
         </div>
       </div>
-      
+
       {show && detail && (
-      <ul className='show-detail-list'>
+      <ul className="show-detail-list">
         {Object.entries(detail).map(([key, value]) => (
-          <li className='detail-element' key={key}>
+          <li className="detail-element" key={key}>
             <strong>
               {key}
               :

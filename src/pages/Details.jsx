@@ -27,7 +27,7 @@ const Details = () => {
 
       <Search onSearch={handleSearch} />
 
-      <ul className='province-list'>
+      <ul className="province-list">
         {cities.map((countryData) => {
           if (countryData.nombre === country) {
             return countryData.provinces

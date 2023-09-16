@@ -1,27 +1,28 @@
 .homeCard-container {
-    width: 50%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    overflow-y: scroll;
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  /* overflow-y: scroll; */
 }
 
 .location-img {
-    width: 2rem;
-    border-radius: 10px;
-    background-color: red;
-    filter: invert(10%);
+  width: 2rem;
+  border-radius: 10px;
+  background-color: red;
+  filter: invert(10%);
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 .arrow-img {
-    width: 2rem;
-    filter: invert(95%);
+  width: 2rem;
+  filter: invert(95%);
 }

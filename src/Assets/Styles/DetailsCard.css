@@ -1,97 +1,92 @@
 .list-element {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #fff;
-    background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
 }
 
 .card-and-button {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    padding: 1rem;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.province-list{
-    display: flex;
-    flex-direction: column;
-    max-height: 470px;
-    overflow-y: scroll;
+.province-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 470px;
+  overflow-y: scroll;
 }
-
 
 .detailCard-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-name {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-
-
 .province-list li:nth-child(odd) {
-    background-color: #eb4b8a;
+  background-color: #eb4b8a;
 }
 
 .province-list li:nth-child(even) {
-    background-color: #cf4278;
+  background-color: #cf4278;
 }
 
 .show-detail-list {
-    background-color: #fff;
-    color: black;
-    border-radius: 10px;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
 }
 
 .show-detail-list li:nth-child(odd) {
-    background-color: #eceaea;
+  background-color: #eceaea;
 }
 
 .show-detail-list li:nth-child(even) {
-    background-color: white;
+  background-color: white;
 }
 
-
-
 .dc-imp-city {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .detail-element {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-    border-bottom: 1px solid gray;
-    background-color: #fff;
-    border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-bottom: 1px solid gray;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 input {
-    width: 100%;
-    height: 2rem;
-    border-radius: 10px;
-    border: 1px solid gray;
-    padding: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 0.5rem;
 }
+
 .show-detail-btn {
-    border-radius: 15px;
-    background-color: #dbdbdb;
+  border-radius: 15px;
+  background-color: #dbdbdb;
 }
 
 .arrow-icon {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 
-
 .details-container {
-    height: 500px
+  height: 500px;
 }
