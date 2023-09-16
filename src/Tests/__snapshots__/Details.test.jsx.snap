@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot del componente Details 1`] = `
+<div
+  className="details-container"
+>
+  <div
+    className="header-container"
+  >
+    <div
+      className="img-header-container"
+    >
+      <img
+        alt="logo"
+        className="logo-header"
+        src="pngegg.png"
+      />
+    </div>
+    <div
+      className="title-header-container"
+    >
+      <h1
+        className="title-header"
+      >
+        South America air polution
+      </h1>
+    </div>
+  </div>
+  <div
+    className="details-title"
+  >
+    <h2>
+      Provinces
+    </h2>
+  </div>
+  <div
+    className="search-container"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Buscar provincias..."
+      type="text"
+      value=""
+    />
+  </div>
+  <ul
+    className="province-list"
+  />
+</div>
+`;
