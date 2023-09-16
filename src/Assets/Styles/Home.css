@@ -1,12 +1,30 @@
 .home-container {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  overflow-y: scroll;
+  width: 500px;
 }
 
 .item {
-    border: 1px solid #ccc;
-    height: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border: 1px solid #ccc;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  border: 1px solid #ccc;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.dark {
+  background-color: #cd4076;
+}
+
+.light {
+  background-color: #dc4782;
 }
