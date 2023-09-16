@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { fetchDetail, showDetails } from '../Redux/Details/detailsSlice';
+import '../Assets/Styles/DetailsCard.css'
 
 const DetailsCard = ({
   name, impCity, show, detail,
@@ -15,19 +16,22 @@ const DetailsCard = ({
 
   return (
     <div className="detailCard-container">
-      <div className="card-name">
-        <strong>{name}</strong>
-        <span>{impCity}</span>
+      <div className="card-and-button">
+        <div className="card-name">
+          <strong>{name}</strong>
+          <span>{impCity}</span>
+        </div>
+        <div className="button-container">
+          <button className='show-detail-btn' type="button" onClick={handleClick}>
+            {show ? 'Hide' : 'Show'}
+          </button>
+        </div>
       </div>
-      <div className="button-container">
-        <button type="button" onClick={handleClick}>
-          {show ? 'Hide' : 'Show'}
-        </button>
-      </div>
+      
       {show && detail && (
-      <ul>
+      <ul className='show-detail-list'>
         {Object.entries(detail).map(([key, value]) => (
-          <li key={key}>
+          <li className='detail-element' key={key}>
             <strong>
               {key}
               :

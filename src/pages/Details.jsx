@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import DetailsCard from '../Components/DetailsCard';
 import Header from '../Components/Header';
 import Search from '../Components/Search';
+import '../Assets/Styles/Details.css';
 
 const Details = () => {
   const { country } = useParams();
@@ -22,7 +23,7 @@ const Details = () => {
 
       <Search onSearch={handleSearch} />
 
-      <ul>
+      <ul className='province-list'>
         {cities.map((countryData) => {
           if (countryData.nombre === country) {
             return countryData.provinces
