@@ -8,14 +8,14 @@
 
 body {
     background-color: rgb(224, 222, 222);
+    height: 90vh;
 }
 
 .App {
     width: 500px;
-    height: 100vh;
+    height: 800px;
     background-color: #ec4c8a;
     color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }

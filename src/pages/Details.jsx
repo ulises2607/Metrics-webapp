@@ -21,6 +21,10 @@ const Details = () => {
     <div className="details-container">
       <Header title={country} />
 
+      <div className="details-title">
+        <h2>Provinces</h2>
+      </div>
+
       <Search onSearch={handleSearch} />
 
       <ul className='province-list'>

@@ -19,6 +19,8 @@
 .province-list{
     display: flex;
     flex-direction: column;
+    max-height: 470px;
+    overflow-y: scroll;
 }
 
 
@@ -30,12 +32,37 @@
 .card-name {
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.province-list li:nth-child(odd) {
+    background-color: #eb4b8a;
+}
+
+.province-list li:nth-child(even) {
+    background-color: #cf4278;
 }
 
 .show-detail-list {
     background-color: #fff;
     color: black;
     border-radius: 10px;
+}
+
+.show-detail-list li:nth-child(odd) {
+    background-color: #eceaea;
+}
+
+.show-detail-list li:nth-child(even) {
+    background-color: white;
+}
+
+
+
+.dc-imp-city {
+    padding-left: 1rem;
 }
 
 .detail-element {
@@ -54,4 +81,17 @@ input {
     border-radius: 10px;
     border: 1px solid gray;
     padding: 0.5rem;
+}
+.show-detail-btn {
+    border-radius: 15px;
+    background-color: #dbdbdb;
+}
+
+.arrow-icon {
+    width: 1.5rem;
+}
+
+
+.details-container {
+    height: 500px
 }

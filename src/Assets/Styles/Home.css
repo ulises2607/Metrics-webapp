@@ -1,7 +1,8 @@
 .home-container {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    height: 100%;;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .item {
@@ -18,4 +19,12 @@
     background-color: #ccc;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.dark {
+    background-color: #cd4076;
+}
+
+.light {
+    background-color: #dc4782;
 }

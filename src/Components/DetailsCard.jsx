@@ -19,11 +19,12 @@ const DetailsCard = ({
       <div className="card-and-button">
         <div className="card-name">
           <strong>{name}</strong>
-          <span>{impCity}</span>
+          <span className='dc-imp-city'>{impCity}</span>
         </div>
         <div className="button-container">
           <button className='show-detail-btn' type="button" onClick={handleClick}>
-            {show ? 'Hide' : 'Show'}
+            {show ? <img src={require('../Assets/Images/up-arrow.png')} alt="minus" className='arrow-icon' /> :
+             <img src={require('../Assets/Images/down-arrow.png')} alt='logo' className='arrow-icon' />}
           </button>
         </div>
       </div>
