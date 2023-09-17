@@ -99,7 +99,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Soon
+- You can try a [Demo here!](https://dev--splendid-hummingbird-25de97.netlify.app/)
 ---
 
 <!-- GETTING STARTED -->
