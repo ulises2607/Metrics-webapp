@@ -6,7 +6,8 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem 0 2rem;
+  width: 100%;
 }
 
 .home-icon {
@@ -24,9 +25,11 @@ svg {
 nav {
   height: 3rem;
   background-color: #df4783;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
 
 .left-arrow {
   width: 1.5rem;
-  height: 1.5rem;
 }
