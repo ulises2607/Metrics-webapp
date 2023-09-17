@@ -1,0 +1,33 @@
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  overflow-y: scroll;
+  width: 100vw;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+  overflow-x: hidden;
+}
+
+.item {
+  border: 1px solid #ccc;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  border: 1px solid #ccc;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.dark {
+  background-color: #db4681;
+}
+
+.light {
+  background-color: #cf4278;
+}
