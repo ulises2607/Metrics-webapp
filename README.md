@@ -100,6 +100,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - You can try a [Demo here!](https://dev--splendid-hummingbird-25de97.netlify.app/)
+- [Project presentation!](https://www.loom.com/share/7ad01d6b8b0b4ec08a839e2afbb8019f)
 ---
 
 <!-- GETTING STARTED -->
