@@ -9,10 +9,10 @@ const HomeCards = ({ item, isDark }) => (
   <div className={`homeCard-container ${isDark ? 'dark' : 'light'}`}>
     <div className="info-card">
       <img src={peru} alt="" className="country-location" />
-      <h2 className="title-card">{item.country}</h2>
+      <h2 className="title-card">{item.country.toUpperCase()}</h2>
     </div>
 
-    <Link to={`/details/${item}`}>
+    <Link to={`/details/${item.country}`}>
 
       <img className="arrow-img" src={arrow} alt="GIF" />
     </Link>
