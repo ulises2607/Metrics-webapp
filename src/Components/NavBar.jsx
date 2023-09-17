@@ -10,7 +10,7 @@ const NavBar = () => (
         <li>
           {' '}
           <Link to="/">
-            <img src={leftArrow} alt="back" className='left-arrow'/>
+            <img src={leftArrow} alt="back" className="left-arrow" />
           </Link>
         </li>
         <li><h2>South America</h2></li>

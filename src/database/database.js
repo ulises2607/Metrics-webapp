@@ -1,4 +1,17 @@
-export const SOUTH_AMERICA = ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela'];
+export const SOUTH_AMERICA = [
+  { country: 'Argentina', countryImg: '../Assets/Images/paises/ARGENTINA-removebg-preview.png' },
+  { country: 'Bolivia', countryImg: '../Assets/Images/paises/BOLIVIA-removebg-preview.png' },
+  { country: 'Brazil', countryImg: '../Assets/Images/paises/BRASIL_DEF-removebg-preview.png' },
+  { country: 'Chile', countryImg: '../Assets/Images/paises/CHILE-removebg-preview.png' },
+  { country: 'Colombia', countryImg: '../Assets/Images/paises/COLOMBIA-removebg-preview.png' },
+  { country: 'Ecuador', countryImg: '../Assets/Images/paises/ECUADOR-removebg-preview.png' },
+  { country: 'Guyana', countryImg: '../Assets/Images/paises/GUYANA-removebg-preview.png' },
+  { country: 'Paraguay', countryImg: '../Assets/Images/paises/PARAGUAY-removebg-preview.png' },
+  { country: 'Peru', countryImg: '../Assets/Images/paises/PERU-removebg-preview.png' },
+  { country: 'Suriname', countryImg: '../Assets/Images/paises/SURINAM-removebg-preview.png' },
+  { country: 'Uruguay', countryImg: '../Assets/Images/paises/URUGUAY-removebg-preview.png' },
+  { country: 'Venezuela', countryImg: '../Assets/Images/paises/VENEZUELA-removebg-preview.png' },
+];
 
 export const ejemplo = [
   {
