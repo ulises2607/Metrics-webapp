@@ -3,7 +3,10 @@
   flex-wrap: wrap;
   height: 100%;
   overflow-y: scroll;
-  width: 500px;
+  width: 100%;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+  overflow-x: hidden;
 }
 
 .item {

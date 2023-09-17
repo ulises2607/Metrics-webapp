@@ -5,6 +5,7 @@
   padding: 0.5rem 0;
   border-bottom: 1px solid #fff;
   background-color: #fff;
+  width: 100%;
 }
 
 .card-and-button {
@@ -94,4 +95,5 @@ input {
 
 .details-container {
   height: 500px;
+  width: 100vw;
 }
