@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../Assets/Styles/HomeCards.css';
-import arg from '../Assets/Images/paises/IMG-20230915-WA0004.jpg';
-import arrow from '../Assets/Images/arrow-right.png';
+import arrow from '../Assets/Images/arrow-circle-right.svg';
+import peru from '../Assets/Images/PAISES/PERU-removebg-preview.png'
 
 const HomeCards = ({ item, isDark }) => (
   <div className={`homeCard-container ${isDark ? 'dark' : 'light'}`}>
     <div className="info-card">
-      <img className="location-img" src={arg} alt="GIF" />
-      <h2>{item}</h2>
+      <img src={peru} alt="" className='country-location' />
+      <h2 className='title-card'>{item}</h2>
     </div>
 
     <Link to={`/details/${item}`}>

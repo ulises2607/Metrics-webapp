@@ -5,16 +5,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  height: 200px;
+  /* border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2); */
+  transition: all 0.3s ease-in-out;
 
-  /* overflow-y: scroll; */
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.location-img {
-  width: 2rem;
-  border-radius: 10px;
-  background-color: red;
-  filter: invert(10%);
-}
+
 
 a {
   text-decoration: none;
@@ -23,6 +24,25 @@ a {
 }
 
 .arrow-img {
-  width: 2rem;
+  width: 1.5rem;
   filter: invert(95%);
+  position: relative;
+  bottom: 4.5rem;
+  left: 0.5rem
+}
+
+.country-location {
+  width: 5rem;
+  position: relative;
+  bottom: 1rem;
+  left: 3rem;
+}
+
+.title-card {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #edc2d4;
+  position: relative;
+  top: 0.5rem;
+  left: 7rem;
 }
